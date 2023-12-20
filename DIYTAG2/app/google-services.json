@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "771557872908",
+    "project_id": "diytag-f94e6",
+    "storage_bucket": "diytag-f94e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771557872908:android:3bb73e44cbdaec899ea529",
+        "android_client_info": {
+          "package_name": "com.example.diytag"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY6EC9zwGH1nMosFZJWWnk0E3Fec26cCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

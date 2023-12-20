@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/custom_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/topuparrowback"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/editTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top-Up"
+        android:textSize="24dp"
+        android:textColor="@color/lightgreen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toEndOf="@+id/topuparrowback"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.571" />
+
+
+    <TextView
+        android:id="@+id/cashin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top-up value (₱)"
+        android:textColor="@color/light_black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/inputnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Amount(₱)"
+        android:textColor="@color/light_black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Imagebox3"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/pesosign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₱"
+        android:textSize="50dp"
+        android:textColor="@color/light_black"
+        app:layout_constraintBottom_toBottomOf="@+id/enteramount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="@+id/enteramount"
+        app:layout_constraintTop_toTopOf="@+id/enteramount"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <EditText
+        android:id="@+id/enteramount"
+        android:layout_width="337dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/topup_custom"
+        android:drawablePadding="8dp"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:paddingStart="60dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/light_black"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Imagebox4"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <ImageView
+        android:id="@+id/Imagebox"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/custom_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.150"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textSize="24dp"
+        android:textColor="@color/lightgreen"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Imagebox"
+        app:layout_constraintEnd_toEndOf="@+id/Imagebox"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/Imagebox"
+        app:layout_constraintTop_toTopOf="@+id/Imagebox"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <ImageView
+        android:id="@+id/Imagebox1"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/custom_rec"
+        app:layout_constraintEnd_toStartOf="@+id/Imagebox2"
+        app:layout_constraintStart_toEndOf="@+id/Imagebox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/coins2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/lightgreen"
+        app:layout_constraintBottom_toBottomOf="@+id/Imagebox1"
+        app:layout_constraintEnd_toEndOf="@+id/Imagebox1"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/Imagebox1"
+        app:layout_constraintTop_toTopOf="@+id/Imagebox1"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <ImageView
+    android:id="@+id/Imagebox2"
+    android:layout_width="75dp"
+    android:layout_height="73dp"
+    android:layout_marginTop="150dp"
+    android:src="@drawable/custom_rec"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.850"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/coins3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/lightgreen"
+        app:layout_constraintBottom_toBottomOf="@+id/Imagebox2"
+        app:layout_constraintEnd_toEndOf="@+id/Imagebox2"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/Imagebox2"
+        app:layout_constraintTop_toTopOf="@+id/Imagebox2"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <ImageView
+        android:id="@+id/Imagebox3"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/custom_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Imagebox" />
+
+    <TextView
+        android:id="@+id/coins4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/lightgreen"
+        app:layout_constraintBottom_toBottomOf="@+id/Imagebox3"
+        app:layout_constraintEnd_toEndOf="@+id/Imagebox3"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/Imagebox3"
+        app:layout_constraintTop_toTopOf="@+id/Imagebox3"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <ImageView
+        android:id="@+id/Imagebox4"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/custom_rec"
+        app:layout_constraintEnd_toStartOf="@+id/Imagebox5"
+        app:layout_constraintStart_toEndOf="@+id/Imagebox3"
+        app:layout_constraintTop_toBottomOf="@+id/Imagebox1" />
+
+    <TextView
+        android:id="@+id/coins5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/lightgreen"
+        app:layout_constraintBottom_toBottomOf="@+id/Imagebox4"
+        app:layout_constraintEnd_toEndOf="@+id/Imagebox4"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/Imagebox4"
+        app:layout_constraintTop_toTopOf="@+id/Imagebox4"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <ImageView
+        android:id="@+id/Imagebox5"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/custom_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Imagebox2" />
+
+    <TextView
+        android:id="@+id/coins6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/lightgreen"
+        app:layout_constraintBottom_toBottomOf="@+id/Imagebox5"
+        app:layout_constraintEnd_toEndOf="@+id/Imagebox5"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/Imagebox5"
+        app:layout_constraintTop_toTopOf="@+id/Imagebox5"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/paypal_cashin"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/light_black"
+        android:text="Cash-in: Paypal"
+        android:textColor="@color/lightgreen"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enteramount"
+        app:layout_constraintVertical_bias="0.11"
+        tools:ignore="TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
